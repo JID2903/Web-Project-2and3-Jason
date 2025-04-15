@@ -1,0 +1,161 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(Cedarville_Cursive\,Roboto.zip) format('truetype'); /* Path to the font file */
+    font-weight: normal
+
+}
+/* Styles for the navigation bar */
+.navbar {
+    overflow: hidden; /* Ensures content doesn't overflow */
+    padding: 5px 10px; /* Padding inside the navbar */
+    color: var(--button-bg);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Font style */
+    font-size: 20px; /* Font size */
+}
+
+/* Styles for the main heading (h1) */
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Font style */
+    font-size: 30px; /* Font size */
+}
+
+  /* Global Styles */
+    :root {
+    --bg-color: #121212;    /* Dark Background */
+    --fg-color: #ADADFF;    /* Light Foreground (Text) */
+    --highlight-color: #cf0000; /* Neon Pink Accent */
+    --button-bg: #4CC9F0;   /* Neon Blue Button Background */
+    --button-hover: #06D6A0; /* Neon Green Button Hover */
+    }
+
+  /* Body Styling */
+    body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-weight: 400; /* Sets the font weight to 400 */
+    }
+
+/* Styles for unordered lists */
+ul {
+    list-style-type: none; /* Removes bullet points */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    overflow: hidden; /* Ensures content doesn't overflow */
+}
+
+/* Styles for figure elements */
+figure {
+    text-align: right; /* Aligns content to the right */
+    width: 300px; /* Fixed width */
+    height: 300px; /* Fixed height */
+    margin: 0; /* Removes default margin */
+}
+
+/* Styles for span elements */
+span {
+    color: rgb(241, 15, 15); /* Red text color */
+}
+
+/* Styles for the element with ID "TheSecondone" */
+#TheSecondone {
+    float: right; /* Aligns the element to the right */
+    width: 600px; /* Fixed width */
+    height: 600px; /* Fixed height */
+}
+
+/* Styles for iframe elements */
+iframe {
+    float: left; /* Aligns the iframe to the left */
+}
+
+/* Styles for the footer */
+footer {
+    background-color: rgb(0, 0, 0); /* Light blue background */
+    color: rgb(255, 255, 255); /* White text color */
+    text-align: center; /* Centers the text */
+    padding: 10px; /* Padding inside the footer */
+    position: fixed; /* Fixes the footer at the bottom of the page */
+    left: 0; /* Aligns the footer to the left edge */
+    bottom: 0; /* Aligns the footer to the bottom edge */
+    width: 100%; /* Makes the footer span the full width of the page */
+}
+
+/* Styles for figcaption elements */
+figcaption {
+    color: rgb(248, 4, 4); /* Bright red text color */
+}
+header{
+    color: var(--fg-color); /* Light text color */
+    padding: 20px; /* Padding inside the header */
+    text-align: center; /* Centers the text */
+    font-size: 24px; /* Font size for the header */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Font style */
+}
+.conatiner{
+    width:100%; /* Full width */
+    margin: 0 auto; /* Centers the container */
+}
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    
+    padding: 10px 0; /* Padding around the logo */
+}
+nav{
+     /* Aligns the navigation to the right */
+}
+header::after{
+    display: table; /* Ensures the header clears its floated children */
+    content: ""; /* Empty content for the clearfix */
+    clear: both; /* Clears the floats */
+}
+nav ul{
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    list-style: none; /* Removes bullet points */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav li{
+    display: inline-block; /* Displays list items inline */
+    margin-left: 70px; /* Left margin for spacing */
+    margin-top: 25px; /* Top margin for spacing */
+    padding: 23px; /* Padding inside the list items */
+}
+nav a{
+    color: var(--button-bg); /* Neon blue text color */
+    text-decoration: none; /* Removes underline from links */
+    text-transform: uppercase; /* Uppercase text */
+    font-size: 20px; /* Font size for links */
+}
+nav a:hover{
+    color: var(--bg-color); /* Neon green text color on hover */
+    transition: 0.5s; /* Transition effect for hover */
+}
+nav:hover{
+    background-color: var(--highlight-color); /* Neon pink background on hover */
+    transition: 0.5s; /* Transition effect for hover */
+}
+nav ul li:hover{
+    background-color: var(--button-hover); /* Neon blue background on hover */
+    transition: 0.25s; /* Transition effect for hover */
+}
+nav img{
+    display: flex; /* Flexbox for wrapping images */
+    margin: 0;
+    flex: 1; /* Example: Assigns flex-grow value */
+}
+
+.roboto-custom {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Replace with desired weight */
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
