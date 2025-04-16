@@ -89,7 +89,7 @@ figcaption {
     color: rgb(248, 4, 4); /* Bright red text color */
 }
 header{
-    color: var(--fg-color); /* Light text color */
+    color: var(--highlight-color); /* Light text color */
     padding: 20px; /* Padding inside the header */
     text-align: center; /* Centers the text */
     font-size: 24px; /* Font size for the header */
@@ -99,14 +99,10 @@ header{
     width:100%; /* Full width */
     margin: 0 auto; /* Centers the container */
 }
-.logo{
-    display: flex;
-    justify-content: flex-start;
-    
-    padding: 10px 0; /* Padding around the logo */
-}
 nav{
-     /* Aligns the navigation to the right */
+    display: flex;
+    justify-content: flex-end; /* Moves the links to the right */
+    align-items: center; /* Aligns items vertically */
 }
 header::after{
     display: table; /* Ensures the header clears its floated children */
@@ -123,34 +119,33 @@ nav ul{
 }
 nav li{
     display: inline-block; /* Displays list items inline */
-    margin-left: 70px; /* Left margin for spacing */
-    margin-top: 25px; /* Top margin for spacing */
     padding: 23px; /* Padding inside the list items */
+    margin: 0 10px; /* Margin around the list items */
 }
 nav a{
-    color: var(--button-bg); /* Neon blue text color */
+    color: var(--highlight-color); /* Neon blue text color */
     text-decoration: none; /* Removes underline from links */
     text-transform: uppercase; /* Uppercase text */
     font-size: 20px; /* Font size for links */
+    margin: 20px; /* Margin around links */
 }
 nav a:hover{
     color: var(--bg-color); /* Neon green text color on hover */
     transition: 0.5s; /* Transition effect for hover */
+    background-color: var(--button-hover); /* Neon blue background on hover */
 }
 nav:hover{
-    background-color: var(--highlight-color); /* Neon pink background on hover */
+    background-color: var(--fg-color); /* Neon pink background on hover */
     transition: 0.5s; /* Transition effect for hover */
 }
-nav ul li:hover{
-    background-color: var(--button-hover); /* Neon blue background on hover */
-    transition: 0.25s; /* Transition effect for hover */
+.logo {
+    position: absolute; /* Positions the logo absolutely */
+    left: 0; /* Aligns the logo to the left side of the screen */
+    padding: 10px; /* Padding around the logo */
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 0; /* Padding around the logo */
 }
-nav img{
-    display: flex; /* Flexbox for wrapping images */
-    margin: 0;
-    flex: 1; /* Example: Assigns flex-grow value */
-}
-
 .roboto-custom {
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
@@ -159,3 +154,14 @@ nav img{
     font-variation-settings:
         "wdth" 100;
 }
+    
+    body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    } 
+    
+    body.dark {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    }
