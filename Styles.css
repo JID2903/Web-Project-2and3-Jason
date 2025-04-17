@@ -1,9 +1,4 @@
-@font-face {
-    font-family: 'Roboto';
-    src: url(Cedarville_Cursive\,Roboto.zip) format('truetype'); /* Path to the font file */
-    font-weight: normal
-
-}
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 /* Styles for the navigation bar */
 .navbar {
     overflow: hidden; /* Ensures content doesn't overflow */
@@ -30,12 +25,12 @@ h1 {
 
   /* Body Styling */
     body {
-    font-family: 'Arial', sans-serif;
+    font-family: url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
     background-color: var(--bg-color);
     color: var(--fg-color);
     margin: 0;
     padding: 0;
-    min-height: 100vh;
+    font-family: 'Cedarville Cursive', 'Roboto', sans-serif;
     font-weight: 400; /* Sets the font weight to 400 */
     }
 
@@ -139,12 +134,12 @@ nav:hover{
     transition: 0.5s; /* Transition effect for hover */
 }
 .logo {
-    position: absolute; /* Positions the logo absolutely */
     left: 0; /* Aligns the logo to the left side of the screen */
     padding: 10px; /* Padding around the logo */
     display: flex;
     justify-content: flex-start;
     padding: 10px 0; /* Padding around the logo */
+    align-items: left; /* Aligns items vertically */
 }
 .roboto-custom {
     font-family: "Roboto", sans-serif;
@@ -154,14 +149,7 @@ nav:hover{
     font-variation-settings:
         "wdth" 100;
 }
-    
-    body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    transition: background-color 0.3s ease, color 0.3s ease;
-    } 
-    
-    body.dark {
-    --bg-color: #121212;
-    --text-color: #ffffff;
-    }
+/* Styles for images inside the navigation */
+nav img {
+    margin-right: 500px; /* Margin to the right of the image */
+}

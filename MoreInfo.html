@@ -3,9 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title></title>
+
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    :root {
+    --bg-color: #121212;    /* Dark Background */
+    --fg-color: #ADADFF;    /* Light Foreground (Text) */
+    --highlight-color: #cf0000; /* Neon Pink Accent */
+    --button-bg: #4CC9F0;   /* Neon Blue Button Background */
+    --button-hover: #06D6A0; /* Neon Green Button Hover */
+    }
+    header{
+    color: var(--highlight-color); /* Light text color */
+    padding: 20px; /* Padding inside the header */
+    text-align: center; /* Centers the text */
+    font-size: 24px; /* Font size for the header */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Font style */
+}
+.conatiner{
+    width:100%; /* Full width */
+    margin: 0 auto; /* Centers the container */
+}
+body{
+    background-color: var(--bg-color); /* Dark background color */
+    color: var(--fg-color); /* Light text color */
+    font-family: 'Cedarville Cursive','Roboto', sans-serif; /* Font style */
+    font-size: 25px; /* Font size for body text */
+}
+h1{
+    color: var(--highlight-color); /* Neon pink text color */
+    font-size: 36px; /* Font size for the heading */
+    text-align: center; /* Centers the heading */
+    margin-top: 20px; /* Margin above the heading */
+}
+nav{
+    display: flex;
+    justify-content: flex-end; /* Moves the links to the right */
+    align-items: center; /* Aligns items vertically */
+}
+header::after{
+    display: table; /* Ensures the header clears its floated children */
+    content: ""; /* Empty content for the clearfix */
+    clear: both; /* Clears the floats */
+}
+nav ul{
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    list-style: none; /* Removes bullet points */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav li{
+    display: inline-block; /* Displays list items inline */
+    padding: 23px; /* Padding inside the list items */
+    margin: 0 10px; /* Margin around the list items */
+}
+nav a{
+    color: var(--highlight-color); /* Neon blue text color */
+    text-decoration: none; /* Removes underline from links */
+    text-transform: uppercase; /* Uppercase text */
+    font-size: 20px; /* Font size for links */
+    margin: 20px; /* Margin around links */
+}
+nav a:hover{
+    color: var(--bg-color); /* Neon green text color on hover */
+    transition: 0.5s; /* Transition effect for hover */
+    background-color: var(--button-hover); /* Neon blue background on hover */
+}
+nav:hover{
+    background-color: var(--fg-color); /* Neon pink background on hover */
+    transition: 0.5s; /* Transition effect for hover */
+}
+.logo {
+    left: 0; /* Aligns the logo to the left side of the screen */
+    padding: 10px; /* Padding around the logo */
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 0; /* Padding around the logo */
+    align-items: left; /* Aligns items vertically */
+}
+.roboto-custom {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Replace with desired weight */
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+nav img {
+    display: flex;
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center;
+}
+
+#Logoimage {
+    margin-right: 500px; /* Pushes the logo to the left */
+}
+.roboto-custom {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Replace with desired weight */
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+</style>
 </head>
 <body>
-    
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li id="Logoimage"><img src="Treaty4 logo.png" height="100" width="100" alt="Treaty 4 Logo" class="logo"></li>
+                    <a href="Treaty4.html"><li>Home</li></a>
+                    <a href="MoreInfo.html"><li>More Info</li></a>
+                    <a href="Sign in.html"><li>Sign In</li></a>
+                    <a href="Sign up.html"><li>Sign Up</li></a>
+                    <a href="Contact.html"><li>Contact</li></a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+    <h1>Where was the Treaty Signed?</h1>
+    <p>Treaty 4, also known as the Qu'Appelle Treaty, was signed between September 15 and 25, 1874, at Fort Qu'Appelle in what is now southern Saskatchewan. This agreement was made between representatives of the Canadian Crown and leaders of the Cree, Saulteaux (Anishinaabe), and Assiniboine (Nakota) nations. The treaty negotiations were influenced by several factors, including the decline of the buffalo population, food scarcity, and tensions arising from the Hudson's Bay Company's sale of Indigenous lands without consultation. The Indigenous communities sought to secure their rights and livelihoods amidst these challenges, leading to the establishment of Treaty 4. The treaty covered a vast area that now encompasses parts of southern Saskatchewan, western Manitoba, and southeastern Alberta. Following the initial signing, additional adhesions occurred at locations such as Fort Ellice, Swan Lake, Fort Pelly, and Fort Walsh, extending the treaty's reach and impact.</p>
+        
+    <figcaption>By<a href="//commons.wikimedia.org/wiki/User:Dger" title="User:Dger">Dger</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=103265745">Link</a></figcaption>
+        <figure><img src="Treaty_4_monument.jpg" alt="Treaty 4 Monument Pillar with a Sharp" width="500" height="500"></figure>
+</section>
+<main>
+    <h1>What are the Historic terms of the Treaty 4?</h1>
+    <p>The historic terms of Treaty 4, signed in 1874, included several key provisions aimed at establishing a framework for the relationship between the Crown and the Indigenous nations involved. The treaty provided for the following:</p>
+    <ul>
+        <li>Land Surrender: Indigenous nations agreed to surrender their rights to a vast area of land in exchange for certain benefits and protections.</li>
+        <li>Reserve Creation: The treaty established specific reserve lands for the Indigenous communities, where they could continue their traditional ways of life.</li>
+        <li>Annual Payments: The treaty included provisions for annual payments to the Indigenous signatories, providing them with financial support.</li>
+        <li>Education and Health Care: The treaty promised access to education and health care services for the Indigenous communities.</li>
+        <li>Hunting and Fishing Rights: Indigenous nations retained their rights to hunt, fish, and gather on the surrendered lands, ensuring their ability to maintain traditional practices.</li>
+        </ul>
+</main>
 </body>
 </html>
