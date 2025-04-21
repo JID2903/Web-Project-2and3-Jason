@@ -17,7 +17,7 @@ h1 {
   /* Global Styles */
     :root {
     --bg-color: #121212;    /* Dark Background */
-    --fg-color: #ADADFF;    /* Light Foreground (Text) */
+    --fg-color: #bcbeff;    /* Light Foreground (Text) */
     --highlight-color: #cf0000; /* Neon Pink Accent */
     --button-bg: #4CC9F0;   /* Neon Blue Button Background */
     --button-hover: #06D6A0; /* Neon Green Button Hover */
@@ -31,7 +31,8 @@ h1 {
     margin: 0;
     padding: 0;
     font-family: 'Cedarville Cursive', 'Roboto', sans-serif;
-    font-weight: 400; /* Sets the font weight to 400 */
+    font-weight: 800; /* Sets the font weight to 400 */
+    font-size: 20px; /* Sets the font size to 20px */
     }
 
 /* Styles for unordered lists */
@@ -60,6 +61,7 @@ span {
     float: right; /* Aligns the element to the right */
     width: 600px; /* Fixed width */
     height: 600px; /* Fixed height */
+    text-align: right; /* Aligns content to the right */
 }
 
 /* Styles for iframe elements */
@@ -81,7 +83,7 @@ footer {
 
 /* Styles for figcaption elements */
 figcaption {
-    color: rgb(248, 4, 4); /* Bright red text color */
+    color: var(--highlight-color) /* Bright red text color */
 }
 header{
     color: var(--highlight-color); /* Light text color */

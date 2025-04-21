@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In</title>
     <style>
+           /* Global Styles */
+            :root {
+            --bg-color: #121212;    /* Dark Background */
+            --fg-color: #bcbeff;    /* Light Foreground (Text) */
+            --highlight-color: #cf0000; /* Neon Pink Accent */
+            --button-bg: #4CC9F0;   /* Neon Blue Button Background */
+            --button-hover: #06D6A0; /* Neon Green Button Hover */
+        }
         /* Basic styling for the body */
         body {
             font-family: Arial, sans-serif;
@@ -12,7 +20,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #000000;
+            background-color: var(--bg-color);
         }
         /* Styling for the container holding the form */
         .container {
@@ -40,15 +48,16 @@
         .form-group button {
             width: 100%;
             padding: 10px;
-            background-color: #007BFF;
-            color: #fff;
+            background-color: var(--button-bg);
+            color: var(--fg-color);
             border: none;
             border-radius: 4px;
             cursor: pointer;
         }
         /* Hover effect for the submit button */
         .form-group button:hover {
-            background-color: #0056b3;
+            background-color: var(--button-hover);
+            color: var(--bg-color);
         }
         /* Overriding the background color of the body */
     </style>
