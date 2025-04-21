@@ -132,7 +132,7 @@ nav a:hover{
     background-color: var(--button-hover); /* Neon blue background on hover */
 }
 nav:hover{
-    background-color: var(--fg-color); /* Neon pink background on hover */
+    background-color: var(--fg-color); /* Neon purple background on hover */
     transition: 0.5s; /* Transition effect for hover */
 }
 .logo {

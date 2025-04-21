@@ -6,77 +6,87 @@
     <title>Sign In / Sign Up</title>
     <!-- Internal CSS for styling the page -->
     <style>
-        
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-        }
-        .container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .form-group {
-            margin-bottom: 15px;
-        }
+        /* Global Styles */
+         :root {
+         --bg-color: #121212;    /* Dark Background */
+         --fg-color: #bcbeff;    /* Light Foreground (Text) */
+         --highlight-color: #cf0000; /* Neon Pink Accent */
+         --button-bg: #4CC9F0;   /* Neon Blue Button Background */
+         --button-hover: #06D6A0; /* Neon Green Button Hover */
+     }
+     /* Basic styling for the body */
+     body {
+         font-family: Arial, sans-serif;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+         background-color: var(--bg-color);
+     }
+     /* Styling for the container holding the form */
+     .container {
+         background-color: #fdfdfd;
+         padding: 20px;
+         border-radius: 8px;
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     }
+     /* Styling for each form `wgroup */
+     .form-group {
+         margin-bottom: 15px;
+     }
+     /* Styling for labels within form groups */
         .form-group label {
             display: block;
-            margin-bottom: 5px;
+         margin-bottom: 5px;
         }
+     /* Styling for input fields within form groups */
         .form-group input {
             width: 100%;
             padding: 8px;
             box-sizing: border-box;
         }
+     /* Styling for the submit button */
         .form-group button {
             width: 100%;
             padding: 10px;
-            background-color: #007BFF;
-            color: #fff;
+            background-color: var(--button-bg);
+            color: var(--highlight-color);
             border: none;
             border-radius: 4px;
             cursor: pointer;
         }
+     /* Hover effect for the submit button */
         .form-group button:hover {
-            background-color: #0056b3;
+            background-color: var(--button-hover);
+            color: var(--bg-color);
         }
-    </style>
-    <!-- Additional CSS to change the background color -->
-    <style>
-        body {
-            background-color: #BFEFFF; /* Baby blue color */
-        }
-    </style>
+     /* Overriding the background color of the body */
+ </style>
 </head>
 <body>
     <!-- Container for the form -->
     <div class="container">
-        <h2>Sign Up</h2>
+        <h2 tabindex="1">Sign Up</h2>
         <!-- Form for user sign up -->
-        <form action="index.html" method="post">
+        <form action="index.html" method="post" tabindex="2">
             <!-- Form group for username input -->
-            <div class="form-group">
+            <div class="form-group" tabindex="3">
                 <label for="signup-username">Username:</label>
-                <input type="text" id="signup-username" name="username" required>
+                <input type="text" id="signup-username" name="username" required tabindex="4">
             </div>
             <!-- Form group for email input -->
             <div class="form-group">
                 <label for="signup-email">Email:</label>
-                <input type="email" id="signup-email" name="email" required>
+                <input type="email" id="signup-email" name="email" required tabindex="5">
             </div>
             <!-- Form group for password input -->
             <div class="form-group">
                 <label for="signup-password">Password:</label>
-                <input type="password" id="signup-password" name="password" required>
+                <input type="password" id="signup-password" name="password" required tabindex="6">
             </div>
             <!-- Form group for submit button -->
             <div class="form-group">
-                <button type="submit">Sign Up</button>
+                <button type="submit" tabindex="7">Sign Up</button>
             </div>
         </form>
     </div>
